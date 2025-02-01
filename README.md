@@ -10,9 +10,9 @@ The architecture consists of the following components:
 2. **Subnets**:
    - **Public Subnet**: Hosts the web application ECS cluster and is accessible from the internet.
    - **Private Subnet**: Hosts the database ECS cluster and is not directly accessible from the internet.
-3. **ECS (Elastic Container Service)**:
-   - **Web ECS Cluster**: Deployed in the public subnet to serve the web application.
-   - **DB ECS Cluster**: Deployed in the private subnet to host the database.
+3. **EC2 Instnaces**:
+   - **Web EC2 Instnace**: Deployed in the public subnet to serve the web application.
+   - **DB EC2 Instance**: Deployed in the private subnet to host the database.
 4. **EBS (Elastic Block Store)**: A persistent storage volume attached to the database ECS instance for data storage.
 5. **NAT Gateway**: Allows resources in the private subnet to access the internet for updates and patches while remaining secure.
 6. **Internet Gateway**: Enables communication between the public subnet and the internet.
