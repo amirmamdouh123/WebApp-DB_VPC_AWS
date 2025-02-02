@@ -13,6 +13,6 @@ The architecture consists of the following components:
 3. **EC2 Instnaces**:
    - **Web EC2 Instnace**: Deployed in the public subnet to serve the web application.
    - **DB EC2 Instance**: Deployed in the private subnet to host the database.
-4. **EBS (Elastic Block Store)**: A persistent storage volume attached to the database ECS instance for data storage.
+4. **EBS (Elastic Block Store)**: A persistent storage volume attached to the database EC2 instance for data storage.
 5. **NAT Gateway**: Allows resources in the private subnet to access the internet for updates and patches while remaining secure.
 6. **Internet Gateway**: Enables communication between the public subnet and the internet.
